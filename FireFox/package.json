@@ -1,0 +1,12 @@
+{
+  "title": "Splatranslator",
+  "name": "splatranslator",
+  "version": "0.6",
+  "description": "This add-on translates splatoon.nintendo.net to English.",
+  "main": "index.js",
+  "author": "Azure_Kyte",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT"
+}
