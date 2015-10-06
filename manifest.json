@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Splatranslator",
+  "description": "This extension translates splatoon.nintendo.net for English Audiences",
+  "version": "0.6.1",
+  "icons": { 	"16": "icon16.png",
+				"32": "icon32.png",
+				"48": "icon48.png",
+				"64": "icon64.png",
+				"128": "icon.png" 
+	},
+  
+  
+  
+  "content_scripts": [
+  {
+    "matches": ["https://splatoon.nintendo.net/*"],
+    "js": ["style.js"],
+	"run_at": "document_end"
+  }
+],
+
+"web_accessible_resources": [
+    "Style/*.png",
+	"Style/*.svg"
+  ],
+
+  "permissions": [
+   "activeTab"
+   ]
+}
